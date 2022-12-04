@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-if __name == "__main__":
+if __name__ == "__main__":
     from sys import argv
 
-    numbers_of_args = len(argv) - 1
+    number_of_args = len(argv) - 1
 
-    if number_of_args = 0:
+    if number_of_args == 0:
         print("{} arguments.".format(number_of_args))
     elif number_of_args == 1:
         print("{} argument.".format(number_of_args))
