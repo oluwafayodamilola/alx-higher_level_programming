@@ -1,20 +1,22 @@
 #!/usr/bin/python3
 def replace_in_list(my_list, idx, element):
     """
-        Replace an element from a list
+    Replaces an element at a specific position
 
-        Args:
-            my_list: list to replace from
-            idx: index to replace element
-            element: item to be replaced with
-        Return:
-            my_list
+    Args:
+        my_lsit: list containing element to be changed
+        idx: index to change element
+        element: element to replace pre_existing element
+
+    Return:
+        new list if index was reached or old list if not
     """
     if idx < 0:
         return my_list
-    if idx >= my_list:
-        return  my_list
+    if idx >= len(my_list):
+        return my_list
+
     for index in range(len(my_list)):
         if index == idx:
-            mylist[index] = element
+            my_list[index] = element
             return my_list
