@@ -5,7 +5,7 @@ def new_in_list(my_list, idx, element):
     if idx >= len(my_list):
         return my_list
     new_list = []
-    for index, items in enumerate(my_list):
+    for index, item in enumerate(my_list):
         if index == idx:
             new_list.append(element)
             continue
